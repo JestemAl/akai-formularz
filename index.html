@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AKAI Frontend Task</title>
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+	<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+	<script src="./webgl/objloader.js"></script>
+</head>
+<body onload="startGL()">
+    <!--
+        ...
+        ...
+        ...
+    -->
+
+	<!-- początek formularza -->
+
+	<!-- element section ma ID "task-frontend". Może to się nam przydać m.in. podczas stylowania dokumentu -->
+	<section id="task-frontend">
+
+		<canvas id="canvas" height="90"></canvas>
+
+		<!-- element span otrzymuje klasę "basic-title". Klasa ta może być wykorzystywana w wielu różnych elementach -->
+		<span class="basic-title">Dołącz do nas!</span>
+
+		<form method="POST">
+
+			<!-- od użytkownika pobieramy imię, nazwisko, email oraz informację, do jakiej sekcji chce dołączyć -->
+
+			<!-- <label for="first-name">Imię</label> -->
+		    <input type="text" id="first-name" placeholder="Imię" />
+
+            <!-- <label for="last-name">Nazwisko</label> -->
+		    <input type="text" id="last-name" placeholder="Nazwisko"/>
+
+			<!-- <label for="email">Email</label> -->
+		    <input type="email" id="email" placeholder="Email"/>
+
+			
+			<span>Wybierz co cię interesuje:</span>
+			<div class="sections">
+				<div class="checkboxes">
+					<div>
+						<input type="checkbox" id="frontend-checkbox" name="section" value="frontend">
+						<label for="frontend-checkbox">Frontend</label>
+					</div>
+					<div>
+						<input type="checkbox" id="backend-checkbox" name="section" value="frontend">
+						<label for="backend-checkbox">Backend</label>
+					</div>
+				</div>
+				<div class="checkboxes">
+					<diV>
+						<input type="checkbox" id="mobile-checkbox" name="section" value="frontend">
+						<label for="mobile-checkbox">Mobile</label>
+					</diV>
+					<div>
+						<input type="checkbox" id="graphics-checkbox" name="section" value="frontend">
+						<label for="graphics-checkbox">Grafika</label>
+					</div>
+				</div>
+			</div>
+
+            <input type="submit" value="Prześlij">
+		</form>
+
+	</section>
+	<!-- koniec formularza -->
+
+    <!--
+        ...
+        ...
+        ...
+    -->
+
+
+<!-- zaimportowanie pliku z kodem javascript, który dokona walidacji danych (zadanie JS) -->
+<script type="text/javascript" src="js/validation.js"></script>
+
+</body>
+</html>
