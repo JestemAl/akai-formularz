@@ -363,12 +363,12 @@ async function LoadObj(filename)
     }
   }
 
-  console.log(`Wczytano ${rawVertexPosition.length/3-1} wierzchołków`);
-  console.log(`Wczytano ${rawVertexNormal.length/3-1} wektorów normalnych`);
-  console.log(`Wczytano ${rawVertexCoords.length/2-1} współrzędnych tekstury`);
+  // console.log(`Wczytano ${rawVertexPosition.length/3-1} wierzchołków`);
+  // console.log(`Wczytano ${rawVertexNormal.length/3-1} wektorów normalnych`);
+  // console.log(`Wczytano ${rawVertexCoords.length/2-1} współrzędnych tekstury`);
 
-  console.log(`W efekcie mapowania stworzono ${vertexPosition.length/3} wierzchołków`);
-  console.log(`W efekcie mapowania stworzono ${indexes.length} indeksów`);
+  // console.log(`W efekcie mapowania stworzono ${vertexPosition.length/3} wierzchołków`);
+  // console.log(`W efekcie mapowania stworzono ${indexes.length} indeksów`);
  
   return [indexes, vertexPosition, vertexCoords, vertexNormal];
 }
