@@ -5,3 +5,6 @@
 ## link:https://akai-rekrutacja.netlify.app/
 
 nie skończyłem pisać walidacji, jutro po uczelni wrzucę jeśli jeszcze będzie można.
+
+
+## test
